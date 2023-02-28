@@ -1,31 +1,37 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  "apples" => 23,
+  "grapes" => 48,
+  "bananas" => 507
+}
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+puts foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+puts foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods["grapes"]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
-
-
+foods["dumplings"] = 15
+puts foods["dumplings"]
 #-------------------
 # Part 2: Email
 #-------------------
@@ -37,16 +43,46 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+emails = ["Learning to code", "Dinner", "Testing 1, 2, 3"]
+
+emails = [
+  {
+    sender: "coder@gmail.com",
+    recipient: "ilovecoding@gmail.com",
+    subject: "Learning to Code",
+    body: "I am enjoying learning how to program, I think you should do it as well",
+    timestamp: "2/28/2023 @ 13:40:57"
+  },
+  {
+    sender: "michael@gmail.com",
+    recipient: "carolyn@gmail.com",
+    subject: "Dinner",
+    body: "Does this look like a good recipe for dinner?",
+    timestamp: "2/28/2023 @ 13:49:34"
+  },
+  {
+    sender: "computer@gmail.com",
+    recipient: "me@gmail.com",
+    subject: "Testing 1, 2, 3",
+    body: "This email is a test!",
+    timestamp: "2/28/2023 @ 13:50:12"
+  }
+]
 # Write code that prints your email hash to the terminal.
 
+pp emails
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
 
+#puts emails.keys
+
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
+
+#puts emails.values
 
 
 #-------------------
