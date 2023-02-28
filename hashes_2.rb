@@ -12,6 +12,9 @@ states = {
 #
 #
 
+states.each do |state, abbr|
+  puts "For the state, #{state}, the abbreviation is #{abbr}. Neat huh?"
+end
 
 # ======================================
 # 2- Using the following Hash
@@ -28,6 +31,9 @@ birthdays = {
 #
 #
 
+birthdays.each do |name, date|
+  puts "#{name}'s birthday is on #{date}!"
+end
 
 # ======================================
 # 3- Using the following Hash
@@ -43,3 +49,9 @@ login_statuses = {
 #
 #
 #
+
+login_statuses.each do |name, status|
+  if status == true
+    puts "#{name}"
+  end
+end
